@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.css";
+// Components
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <div className="text-3xl font-bold underline">test</div>
+      <Navbar />
     </div>
   );
 }
