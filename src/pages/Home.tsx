@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
+      <div className="border-b-2 my-16"></div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 // Components
-import ModelViewer from "./ModelViewer";
+import ModelViewer from "../global/ModelViewer";
 // Icons
 import { FaCanadianMapleLeaf } from "react-icons/fa";
 import { GiSpiderWeb } from "react-icons/gi";
