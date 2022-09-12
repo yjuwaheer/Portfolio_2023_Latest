@@ -7,18 +7,23 @@ import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 // Pages
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
 
 function App() {
   return (
     <div className="flex justify-center">
       <div className="w-[1200px] min-h-screen">
-        <Navbar />
         <Router>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<div>404</div>} />
           </Routes>
+          <Footer />
         </Router>
-        <Footer />
       </div>
     </div>
   );
