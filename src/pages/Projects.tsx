@@ -5,7 +5,7 @@ import Tracker from "../components/projects/Tracker";
 const Projects = () => {
   return (
     <div>
-      <div className="w-full bg-gray-100 h-96 rounded-xl">
+      <div className="w-full px-8 py-4 overflow-hidden bg-gray-100 h-96 rounded-xl">
         <Tracker />
       </div>
       <div className="flex mt-10">
