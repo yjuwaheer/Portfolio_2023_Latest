@@ -39,8 +39,7 @@ const Featured = () => {
             Forum App
           </div>
           <div className="text-gray-500">
-            A forum web app for users to ask questions. Tried to replicate
-            Reddit.
+            A web app for users to ask questions. Tried to replicate Reddit.
           </div>
           <a
             href="https://reddit-clone-yjuwaheer.vercel.app/"
@@ -60,8 +59,8 @@ const Featured = () => {
             Todo App
           </div>
           <div className="text-gray-500">
-            A todo web app to store your tasks. Uses local storage to persist
-            data.
+            A web app to store and organize tasks in 4 categories. Uses local
+            storage to persist data.
           </div>
           <a
             href="https://todo-app-react-kappa.vercel.app/"
