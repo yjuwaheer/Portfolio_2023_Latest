@@ -11,12 +11,12 @@ const Hero = () => {
     <div className="flex items-center justify-between">
       {/* Me Window section */}
       <div className="flex flex-col w-[400px] border-2 border-gray-600 rounded-xl">
-        <div className="flex justify-between items-center p-3 border-b-2 border-gray-600">
+        <div className="flex items-center justify-between p-3 border-b-2 border-gray-600">
           <div className="font-semibold">Me</div>
           <div className="flex">
-            <div className="border border-gray-600 w-4 h-4 rounded-full mx-1"></div>
-            <div className="border border-gray-600 w-4 h-4 rounded-full mx-1"></div>
-            <div className="border border-gray-600 w-4 h-4 rounded-full ml-1"></div>
+            <div className="w-4 h-4 mx-1 border border-gray-600 rounded-full"></div>
+            <div className="w-4 h-4 mx-1 border border-gray-600 rounded-full"></div>
+            <div className="w-4 h-4 ml-1 border border-gray-600 rounded-full"></div>
           </div>
         </div>
         <div className="flex flex-col p-3 border-b-2 border-gray-600">
@@ -30,14 +30,14 @@ const Hero = () => {
             opportunities to learn more about it.
           </div>
         </div>
-        <div className="flex justify-between items-center p-3 pr-5 rounded-b-xl hover:bg-gray-100 hover:cursor-pointer hover:pr-3">
-          <div className="text-xl font-semibold">Lets' Talk</div>
+        <div className="flex items-center justify-between p-3 pr-5 rounded-b-xl hover:bg-gray-100 hover:cursor-pointer hover:pr-3">
+          <div className="text-xl font-semibold">Let's Talk</div>
           <TbArrowRightTail className="text-3xl" />
         </div>
       </div>
 
       {/* 3D Model */}
-      <div className="w-[700px] h-80 rounded-xl">
+      <div className="w-[700px] h-80">
         <ModelViewer
           scale="3.5"
           position={[-0.7, -0.7, 0]}
