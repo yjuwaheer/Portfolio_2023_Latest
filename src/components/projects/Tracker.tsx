@@ -6,6 +6,12 @@ import { IoLogoElectron } from "react-icons/io5";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FiDownload } from "react-icons/fi";
 import { BsWindows } from "react-icons/bs";
+// Icons Demo App
+import { BiHome } from "react-icons/bi";
+import { FaTasks } from "react-icons/fa";
+import { FiSettings } from "react-icons/fi";
+import { GoProject } from "react-icons/go";
+import { FcTodoList } from "react-icons/fc";
 
 const Tracker = () => {
   return (
@@ -30,11 +36,40 @@ const Tracker = () => {
         </a>
       </div>
       <div className="my-3 border-b border-gray-200"></div>
-      <img
+      {/* <img
         src="/images/tracker.png"
         alt="tracker"
         className="border border-gray-200 rounded-xl"
-      />
+      /> */}
+
+      {/* Demo App */}
+      <div className="flex flex-col justify-between w-48 bg-white rounded-l-xl">
+        <div>
+          <div className="flex items-center justify-center h-24 mb-4 text-xl font-bold bg-gray-50 rounded-l-xl">
+            <FcTodoList className="text-4xl" />
+          </div>
+
+          <div className="flex items-center px-3 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white">
+            <BiHome />
+            <div className="pl-1">Dashboard</div>
+          </div>
+
+          <div className="flex items-center px-3 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white">
+            <FaTasks />
+            <div className="pl-1">Tasks</div>
+          </div>
+
+          <div className="flex items-center px-3 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white">
+            <GoProject />
+            <div className="pl-1">Projects</div>
+          </div>
+
+          <div className="flex items-center px-3 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white">
+            <FiSettings />
+            <div className="pl-1">Settings</div>
+          </div>
+        </div>
+      </div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="tracker" effect="solid">
