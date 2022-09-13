@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="mt-4 text-lg font-medium text-gray-800">
             I'm obssessed with web development{" "}
             <GiSpiderWeb className="inline" />, and I'm always looking for
-            opportunities to work and learn more.
+            opportunities to learn more.
           </div>
         </div>
         <div className="flex items-center justify-between p-3 pr-5 rounded-b-xl hover:bg-gray-100 hover:cursor-pointer hover:pr-3">
