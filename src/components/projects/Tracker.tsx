@@ -123,7 +123,7 @@ const Tracker = () => {
       </div>
 
       {/* Tooltip Component */}
-      <ReactTooltip id="tracker" effect="solid">
+      <ReactTooltip id="tracker">
         <span className="flex items-center">
           Download <BsWindows className="mx-2" /> App
         </span>
