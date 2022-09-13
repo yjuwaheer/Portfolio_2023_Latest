@@ -93,21 +93,41 @@ const Recipe = () => {
 
       {/* Demo App */}
       <div className="flex justify-center">
-        {tab === "home" && (
-          <img src="/images/recipe1_mob.png" alt="recipe1" className="w-3/4" />
-        )}
-        {tab === "search" && (
-          <img src="/images/recipe2_mob.png" alt="recipe1" className="w-3/4" />
-        )}
-        {tab === "add" && (
-          <img src="/images/recipe3_mob.png" alt="recipe1" className="w-3/4" />
-        )}
-        {tab === "profile" && (
-          <img src="/images/recipe4_mob.png" alt="recipe1" className="w-3/4" />
-        )}
-        {tab === "settings" && (
-          <img src="/images/recipe5_mob.png" alt="recipe1" className="w-3/4" />
-        )}
+        <img
+          src="/images/recipe1_mob.png"
+          alt="recipe1"
+          className={`w-3/4 ${
+            tab === "home" ? "opacity-100" : "opacity-0 hidden"
+          }`}
+        />
+        <img
+          src="/images/recipe2_mob.png"
+          alt="recipe1"
+          className={`w-3/4 ${
+            tab === "search" ? "opacity-100" : "opacity-0 hidden"
+          }`}
+        />
+        <img
+          src="/images/recipe3_mob.png"
+          alt="recipe1"
+          className={`w-3/4 ${
+            tab === "add" ? "opacity-100" : "opacity-0 hidden"
+          }`}
+        />
+        <img
+          src="/images/recipe4_mob.png"
+          alt="recipe1"
+          className={`w-3/4 ${
+            tab === "profile" ? "opacity-100" : "opacity-0 hidden"
+          }`}
+        />
+        <img
+          src="/images/recipe5_mob.png"
+          alt="recipe1"
+          className={`w-3/4 ${
+            tab === "settings" ? "opacity-100" : "opacity-0 hidden"
+          }`}
+        />
       </div>
 
       {/* Tooltip Component */}
