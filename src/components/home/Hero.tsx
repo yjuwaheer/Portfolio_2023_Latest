@@ -5,6 +5,7 @@ import ModelViewer from "../global/ModelViewer";
 import { FaCanadianMapleLeaf } from "react-icons/fa";
 import { GiSpiderWeb } from "react-icons/gi";
 import { TbArrowRightTail } from "react-icons/tb";
+import { MdFullscreenExit, MdFullscreen, MdClose } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -14,9 +15,15 @@ const Hero = () => {
         <div className="flex items-center justify-between p-3 border-b-2 border-gray-600">
           <div className="font-semibold">Me</div>
           <div className="flex">
-            <div className="w-4 h-4 mx-1 border border-gray-600 rounded-full"></div>
-            <div className="w-4 h-4 mx-1 border border-gray-600 rounded-full"></div>
-            <div className="w-4 h-4 ml-1 border border-gray-600 rounded-full"></div>
+            <div className="w-4 h-4 mx-1 text-sm text-white border border-gray-600 rounded-full cursor-pointer hover:bg-yellow-500">
+              <MdFullscreenExit />
+            </div>
+            <div className="w-4 h-4 mx-1 text-sm text-white border border-gray-600 rounded-full cursor-pointer hover:bg-green-500">
+              <MdFullscreen />
+            </div>
+            <div className="w-4 h-4 ml-1 text-sm text-white border border-gray-600 rounded-full cursor-pointer hover:bg-red-500">
+              <MdClose />
+            </div>
           </div>
         </div>
         <div className="flex flex-col p-3 border-b-2 border-gray-600">
