@@ -49,7 +49,9 @@ const Tracker = () => {
             </div>
 
             <div
-              className="flex items-center px-8 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white"
+              className={`flex items-center px-8 py-2 mx-3 my-2 font-semibold outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white ${
+                tab === "dashboard" ? "bg-red-500 text-white" : "text-gray-600"
+              }`}
               onClick={() => setTab("dashboard")}
             >
               <BiHome />
@@ -57,7 +59,9 @@ const Tracker = () => {
             </div>
 
             <div
-              className="flex items-center px-8 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white"
+              className={`flex items-center px-8 py-2 mx-3 my-2 font-semibold outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white ${
+                tab === "tasks" ? "bg-red-500 text-white" : "text-gray-600"
+              }`}
               onClick={() => setTab("tasks")}
             >
               <FaTasks />
@@ -65,7 +69,9 @@ const Tracker = () => {
             </div>
 
             <div
-              className="flex items-center px-8 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white"
+              className={`flex items-center px-8 py-2 mx-3 my-2 font-semibold outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white ${
+                tab === "projects" ? "bg-red-500 text-white" : "text-gray-600"
+              }`}
               onClick={() => setTab("projects")}
             >
               <GoProject />
@@ -73,7 +79,9 @@ const Tracker = () => {
             </div>
 
             <div
-              className="flex items-center px-8 py-2 mx-3 my-2 font-semibold text-gray-600 outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white"
+              className={`flex items-center px-8 py-2 mx-3 my-2 font-semibold outline-none cursor-pointer rounded-xl hover:bg-red-500 hover:text-white ${
+                tab === "settings" ? "bg-red-500 text-white" : "text-gray-600"
+              }`}
               onClick={() => setTab("settings")}
             >
               <FiSettings />
