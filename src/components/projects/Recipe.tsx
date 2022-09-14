@@ -38,7 +38,7 @@ const Recipe = () => {
       <div className="my-3 border-b border-gray-200"></div>
 
       {/* Menu */}
-      <div className="absolute z-50 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200">
+      <div className="absolute z-10 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200">
         <div
           className={`px-2 py-1 mr-1 rounded-full cursor-pointer ${
             tab === "home" ? "bg-gray-300" : ""
