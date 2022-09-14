@@ -91,34 +91,34 @@ const Tracker = () => {
         </div>
         {/* Demo App Sections */}
         <div>
-          {tab === "dashboard" && (
-            <img
-              src="/images/tracker1.png"
-              alt="tracker1"
-              className="rounded-r-xl"
-            />
-          )}
-          {tab === "tasks" && (
-            <img
-              src="/images/tracker2.png"
-              alt="tracker2"
-              className="rounded-r-xl"
-            />
-          )}
-          {tab === "projects" && (
-            <img
-              src="/images/tracker3.png"
-              alt="tracker3"
-              className="rounded-r-xl"
-            />
-          )}
-          {tab === "settings" && (
-            <img
-              src="/images/tracker4.png"
-              alt="tracker4"
-              className="rounded-r-xl"
-            />
-          )}
+          <img
+            src="/images/tracker1.png"
+            alt="tracker1"
+            className={`rounded-r-xl ${
+              tab === "dashboard" ? "opacity-100" : "opacity-0 hidden"
+            }`}
+          />
+          <img
+            src="/images/tracker2.png"
+            alt="tracker2"
+            className={`rounded-r-xl ${
+              tab === "tasks" ? "opacity-100" : "opacity-0 hidden"
+            }`}
+          />
+          <img
+            src="/images/tracker3.png"
+            alt="tracker3"
+            className={`rounded-r-xl ${
+              tab === "projects" ? "opacity-100" : "opacity-0 hidden"
+            }`}
+          />
+          <img
+            src="/images/tracker4.png"
+            alt="tracker4"
+            className={`rounded-r-xl ${
+              tab === "settings" ? "opacity-100" : "opacity-0 hidden"
+            }`}
+          />
         </div>
       </div>
 
