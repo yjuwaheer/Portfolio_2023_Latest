@@ -27,7 +27,7 @@ const Tracker = () => {
           </div>
         </div>
         <a
-          href="https://reddit-clone-yjuwaheer.vercel.app/"
+          href="/documents/Tracker.Setup.1.0.0.exe"
           target="_blank"
           rel="noopener noreferrer"
           data-tip

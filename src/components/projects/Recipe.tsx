@@ -133,7 +133,7 @@ const Recipe = () => {
       {/* Tooltip Component */}
       <ReactTooltip id="recipe">
         <span className="flex items-center">
-          View <GoMarkGithub className="mx-2" /> Repo
+          View Repo <GoMarkGithub className="mx-2" />
         </span>
       </ReactTooltip>
     </div>
