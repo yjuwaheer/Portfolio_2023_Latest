@@ -60,7 +60,7 @@ const Calculator = () => {
           <div className="flex justify-around">
             <div className="flex flex-col items-center">
               <MdChangeCircle
-                className="my-3 text-2xl font-semibold text-gray-100 cursor-pointer hover:text-gray-300"
+                className="mt-4 mb-3 text-2xl font-semibold text-gray-100 cursor-pointer hover:text-gray-300"
                 onClick={() => cycleColors()}
               />
               <div className="my-3 text-xl font-semibold text-gray-100">7</div>
