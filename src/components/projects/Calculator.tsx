@@ -6,16 +6,14 @@ import { BsCalculatorFill } from "react-icons/bs";
 import { SiReact } from "react-icons/si";
 import { ImArrowUpRight2 } from "react-icons/im";
 // Icons Demo App
-import { IoMdHome, IoMdSearch, IoMdAddCircleOutline } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
-import { FiSettings } from "react-icons/fi";
+import { MdChangeCircle } from "react-icons/md";
 
 const Calculator = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-between">
         <div>
-          <div className="mb-1 text-2xl font-bold">Calculator App</div>
+          <div className="mb-1 text-2xl font-semibold">Calculator App</div>
           <div className="flex items-center font-medium text-gray-500">
             A calculator app built with react
             <SiReact className="ml-1" />
@@ -27,18 +25,60 @@ const Calculator = () => {
           rel="noopener noreferrer"
           data-tip
           data-for="calculator"
-          className="p-2 text-xl text-gray-400 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
+          className="p-2 text-xl text-gray-600 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
         >
           <ImArrowUpRight2 />
         </a>
       </div>
       <div className="my-3 border-b border-gray-200"></div>
 
-      {/* Menu */}
-      <div className="absolute z-50 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200"></div>
-
       {/* Demo App */}
-      <div className="flex justify-center"></div>
+      <div className="flex justify-center">
+        <div className="w-3/4 bg-sky-600 rounded-xl">
+          <div className="h-28"></div>
+          <div className="w-full bg-gray-100 border-b-2"></div>
+          <div className="flex justify-around">
+            <div className="flex flex-col items-center">
+              <MdChangeCircle className="my-3 text-2xl font-semibold text-gray-100" />
+              <div className="my-3 text-xl font-semibold text-gray-100">7</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">4</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">1</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">`</div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="my-3 text-xl font-semibold text-gray-100">AC</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">8</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">5</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">2</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">0</div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="my-3 text-xl font-semibold text-gray-100">C</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">9</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">6</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">3</div>
+              <div className="my-3 text-xl font-semibold text-gray-100">.</div>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="px-2 my-3 text-xl font-semibold rounded-full text-amber-500">
+                /
+              </div>
+              <div className="px-2 my-3 text-xl font-semibold rounded-full text-amber-500">
+                x
+              </div>
+              <div className="px-2 my-3 text-xl font-semibold rounded-full text-amber-500">
+                -
+              </div>
+              <div className="px-2 my-3 text-xl font-semibold rounded-full text-amber-500">
+                +
+              </div>
+              <div className="px-2 my-3 text-xl font-semibold rounded-full text-amber-500">
+                =
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="calculator">
