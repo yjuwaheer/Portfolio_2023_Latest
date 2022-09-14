@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // Tooltip
 import ReactTooltip from "react-tooltip";
 // Icons
@@ -9,6 +9,26 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { MdChangeCircle } from "react-icons/md";
 
 const Calculator = () => {
+  const [bgColor, setBgColor] = useState("bg-sky-600");
+
+  // Cycle colors
+  const cycleColors = () => {
+    const colors = [
+      "bg-sky-600",
+      "bg-red-600",
+      "bg-orange-600",
+      "bg-indigo-600",
+    ];
+
+    const index = colors.indexOf(bgColor);
+
+    if (index === colors.length - 1) {
+      setBgColor(colors[0]);
+    } else {
+      setBgColor(colors[index + 1]);
+    }
+  };
+
   return (
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-between">
@@ -34,12 +54,15 @@ const Calculator = () => {
 
       {/* Demo App */}
       <div className="flex justify-center">
-        <div className="w-3/4 bg-sky-600 rounded-xl">
+        <div className={`w-3/4 ${bgColor} rounded-xl`}>
           <div className="h-28"></div>
           <div className="w-full bg-gray-100 border-b-2"></div>
           <div className="flex justify-around">
             <div className="flex flex-col items-center">
-              <MdChangeCircle className="my-3 text-2xl font-semibold text-gray-100" />
+              <MdChangeCircle
+                className="my-3 text-2xl font-semibold text-gray-100 cursor-pointer hover:text-gray-300"
+                onClick={() => cycleColors()}
+              />
               <div className="my-3 text-xl font-semibold text-gray-100">7</div>
               <div className="my-3 text-xl font-semibold text-gray-100">4</div>
               <div className="my-3 text-xl font-semibold text-gray-100">1</div>
