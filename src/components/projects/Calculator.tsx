@@ -18,6 +18,7 @@ const Calculator = () => {
       "bg-red-600",
       "bg-orange-600",
       "bg-indigo-600",
+      "bg-green-600",
     ];
 
     const index = colors.indexOf(bgColor);
