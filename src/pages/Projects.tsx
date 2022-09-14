@@ -3,6 +3,7 @@ import React from "react";
 import Tracker from "../components/projects/Tracker";
 import Recipe from "../components/projects/Recipe";
 import Calculator from "../components/projects/Calculator";
+import Board from "../components/projects/Board";
 
 const Projects = () => {
   return (
@@ -19,7 +20,9 @@ const Projects = () => {
         </div>
       </div>
       <div className="flex mt-10">
-        <div className="w-2/3 px-8 py-4 mr-10 overflow-hidden bg-gray-100 h-96 rounded-xl"></div>
+        <div className="w-2/3 px-8 py-4 mr-10 overflow-hidden bg-gray-100 h-96 rounded-xl">
+          <Board />
+        </div>
         <div className="w-1/3 px-8 py-4 overflow-hidden bg-gray-100 h-96 rounded-xl"></div>
       </div>
     </div>

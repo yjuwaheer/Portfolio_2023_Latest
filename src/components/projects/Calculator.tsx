@@ -46,7 +46,7 @@ const Calculator = () => {
           rel="noopener noreferrer"
           data-tip
           data-for="calculator"
-          className="p-2 text-xl text-gray-600 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
+          className="p-2 text-xl text-gray-400 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
         >
           <ImArrowUpRight2 />
         </a>
