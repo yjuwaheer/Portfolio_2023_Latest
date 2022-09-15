@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed z-50 flex p-2 font-medium -translate-x-1/2 border-2 border-gray-200 rounded-full bottom-5 left-1/2 bg-gray-50">
+      <nav className="fixed z-50 flex p-1 font-medium -translate-x-1/2 border-2 border-gray-200 rounded-full bottom-5 left-1/2 bg-gray-50">
         <button
           className={`px-4 py-2 mr-2 ${
             pathname === "/" ? "bg-gray-200" : ""
