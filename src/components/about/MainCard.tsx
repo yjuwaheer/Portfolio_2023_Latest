@@ -9,8 +9,8 @@ import { BsEmojiSmile } from "react-icons/bs";
 
 const MainCard = () => {
   return (
-    <div className="w-1/2 px-8 py-4 mt-16 bg-gray-100 rounded-xl">
-      <div className="flex flex-col">
+    <div className="flex justify-center mt-16">
+      <div className="flex flex-col w-1/2 px-8 py-4 bg-gray-100 rounded-xl">
         <div className="text-xl font-semibold text-gray-700">
           My brief story till now...
         </div>
@@ -23,11 +23,11 @@ const MainCard = () => {
           </div>
           <div className="font-medium text-gray-600">
             Born and raised in Mauritius{" "}
-            <GiIsland className="inline mx-1 mb-1" />. For those wondering it's
+            <GiIsland className="inline mb-1 ml-1" />. For those wondering it's
             in the Indian Ocean. If you ever get the chance, I highly recommend
-            visiting. Did my studies till I graduated high school. Afterwards
-            moved to NL, Canada to pursue a B.Sc. at MUN{" "}
-            <FaUniversity className="inline mx-1 mb-1" />.
+            visiting. Did my studies back home till I graduated high school.
+            Afterwards moved to NL, Canada to pursue a B.Sc. at MUN{" "}
+            <FaUniversity className="inline mb-1 ml-1" />.
           </div>
         </div>
 
@@ -37,7 +37,7 @@ const MainCard = () => {
           </div>
           <div className="font-medium text-gray-600">
             I am currently completing my major in Computer Science{" "}
-            <RiComputerFill className="inline mx-1 mb-1" />. I have always been
+            <RiComputerFill className="inline mb-1 ml-1" />. I have always been
             fascinated by computers especially the internet. I really love
             building websites and bring ideas to life.
           </div>
@@ -49,8 +49,8 @@ const MainCard = () => {
         </div>
 
         <div className="text-gray-800">
-          Everything that I am today is because of my Dad. Thanks for your
-          constant support. <ImHeart className="inline mx-1 mb-1" />{" "}
+          Everything that I am today is because of my Dad. I am very grateful
+          for his constant support. <ImHeart className="inline mx-1 mb-1" />{" "}
           <BsEmojiSmile className="inline mb-1" />
         </div>
       </div>
