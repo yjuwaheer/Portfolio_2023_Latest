@@ -1,6 +1,7 @@
 import React from "react";
 // Components
 import Hero from "../components/about/Hero";
+import MainCard from "../components/about/MainCard";
 
 const About = () => {
   return (
@@ -15,9 +16,10 @@ const About = () => {
         <div className="font-semibold mt-14 text-8xl">Passionate</div>
         <div className="mt-4 text-8xl">to craft amazing</div>
         <div className="mt-4 text-8xl">websites</div>
-
-
       </div>
+
+      {/* Main card */}
+      <MainCard />
     </div>
   );
 };
