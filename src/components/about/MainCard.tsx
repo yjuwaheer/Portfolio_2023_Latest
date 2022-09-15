@@ -25,8 +25,8 @@ const MainCard = () => {
             Born and raised in Mauritius{" "}
             <GiIsland className="inline mb-1 ml-1" />. For those wondering it's
             in the Indian Ocean. If you ever get the chance, I highly recommend
-            visiting. Did my studies back home till I graduated high school.
-            Afterwards moved to NL, Canada to pursue a B.Sc. at MUN{" "}
+            visiting. Completed high school back home. Afterwards moved to NL,
+            Canada to pursue a B.Sc. at MUN{" "}
             <FaUniversity className="inline mb-1 ml-1" />.
           </div>
         </div>
