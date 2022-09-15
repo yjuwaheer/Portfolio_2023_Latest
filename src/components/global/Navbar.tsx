@@ -50,6 +50,7 @@ const Navbar = () => {
           } rounded-full cursor-pointer hover:bg-gray-200`}
           onClick={() => {
             navigate("/");
+            window.scrollTo(0, 0);
           }}
         >
           Home
@@ -60,6 +61,7 @@ const Navbar = () => {
           } mr-2 rounded-full cursor-pointer hover:bg-gray-200`}
           onClick={() => {
             navigate("/projects");
+            window.scrollTo(0, 0);
           }}
         >
           <div className="w-2 h-2 mr-1 bg-green-500 rounded-full"></div>
@@ -71,6 +73,7 @@ const Navbar = () => {
           } rounded-full cursor-pointer hover:bg-gray-200`}
           onClick={() => {
             navigate("/about");
+            window.scrollTo(0, 0);
           }}
         >
           About
