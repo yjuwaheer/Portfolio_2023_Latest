@@ -45,7 +45,7 @@ const MainCard = () => {
 
         <div className="flex mb-4 italic text-gray-400">
           ~ More chapters waiting to be written...{" "}
-          <div className="ml-1 animate-pulse">|</div>
+          <div className="ml-1 text-gray-800 animate-pulse">|</div>
         </div>
 
         <div className="text-gray-800">
