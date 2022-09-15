@@ -37,7 +37,7 @@ const Tracker = () => {
           <FiDownload />
         </a>
       </div>
-      <div className="my-3 border-b border-gray-200"></div>
+      <div className="my-3 border border-gray-200"></div>
 
       {/* Demo App */}
       <div className="flex">
