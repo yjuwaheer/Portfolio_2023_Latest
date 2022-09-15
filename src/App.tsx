@@ -20,7 +20,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<div>404</div>} />
+            <Route
+              path="*"
+              element={
+                <div className="flex items-center justify-center text-4xl">
+                  404
+                </div>
+              }
+            />
           </Routes>
           <Footer />
         </Router>
