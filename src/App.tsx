@@ -13,7 +13,7 @@ import About from "./pages/About";
 function App() {
   return (
     <div className="flex justify-center">
-      <div className="w-[1200px] min-h-screen">
+      <div className="lg:w-[1200px] min-h-screen">
         <Router>
           <Navbar />
           <Routes>
