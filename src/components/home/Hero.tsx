@@ -37,10 +37,13 @@ const Hero = () => {
             opportunities to learn more.
           </div>
         </div>
-        <div className="flex items-center justify-between p-3 pr-5 rounded-b-xl hover:bg-gray-100 hover:cursor-pointer hover:pr-3">
+        <a
+          href="mailto:yjuwaheer@mun.ca"
+          className="flex items-center justify-between p-3 pr-5 rounded-b-xl hover:bg-gray-100 hover:cursor-pointer hover:pr-3"
+        >
           <div className="text-xl font-semibold">Let's Talk</div>
           <TbArrowRightTail className="text-3xl" />
-        </div>
+        </a>
       </div>
 
       {/* 3D Model */}

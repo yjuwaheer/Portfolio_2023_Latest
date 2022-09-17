@@ -90,7 +90,7 @@ const Tracker = () => {
           </div>
         </div>
         {/* Demo App Sections */}
-        <div className="border-2 rounded-xl md:rounded-none md:border-0">
+        <div className="border rounded-xl md:rounded-none md:border-0">
           <img
             src="/images/tracker1.png"
             alt="tracker1"
