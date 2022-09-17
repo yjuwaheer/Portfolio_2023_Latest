@@ -35,7 +35,7 @@ const Calculator = () => {
       <div className="flex items-center justify-between">
         <div>
           <div className="mb-1 text-2xl font-semibold">Calculator App</div>
-          <div className="hidden sm:block font-medium text-gray-500">
+          <div className="hidden font-medium text-gray-500 sm:block">
             A calculator app built with react
             <SiReact className="inline ml-1" />
           </div>
@@ -55,7 +55,7 @@ const Calculator = () => {
 
       {/* Demo App */}
       <div className="flex justify-center">
-        <div className={`w-3/4 ${bgColor} rounded-xl`}>
+        <div className={`w-3/4 sm:w-1/2 lg:w-3/4 ${bgColor} rounded-xl`}>
           <div className="h-28"></div>
           <div className="w-full bg-gray-100 border-b-2"></div>
           <div className="flex justify-around">
