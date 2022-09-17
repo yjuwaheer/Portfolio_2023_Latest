@@ -42,7 +42,7 @@ const Tracker = () => {
       {/* Demo App */}
       <div className="flex">
         {/* Menu */}
-        <div className="flex flex-col justify-between bg-white rounded-l-xl">
+        <div className="flex-col justify-between hidden bg-white md:flex rounded-l-xl">
           <div>
             <div className="flex items-center justify-center h-24 mb-4 text-xl font-bold bg-gray-50 rounded-l-xl">
               <FcTodoList className="text-4xl" />
@@ -90,32 +90,32 @@ const Tracker = () => {
           </div>
         </div>
         {/* Demo App Sections */}
-        <div>
+        <div className="border-2 md:border-0">
           <img
             src="/images/tracker1.png"
             alt="tracker1"
-            className={`rounded-r-xl ${
+            className={`md:rounded-r-xl ${
               tab === "dashboard" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker2.png"
             alt="tracker2"
-            className={`rounded-r-xl ${
+            className={`md:rounded-r-xl ${
               tab === "tasks" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker3.png"
             alt="tracker3"
-            className={`rounded-r-xl ${
+            className={`md:rounded-r-xl ${
               tab === "projects" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker4.png"
             alt="tracker4"
-            className={`rounded-r-xl ${
+            className={`md:rounded-r-xl ${
               tab === "settings" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />

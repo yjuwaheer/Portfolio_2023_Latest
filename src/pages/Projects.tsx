@@ -9,7 +9,7 @@ import Design from "../components/projects/Design";
 const Projects = () => {
   return (
     <div>
-      <div className="px-8 py-4 mx-10 overflow-hidden bg-gray-100 h-96 rounded-xl lg:mx-10 xl:mx-0">
+      <div className="h-full px-8 py-4 mx-10 overflow-hidden bg-gray-100 sm:h-96 rounded-xl lg:mx-10 xl:mx-0">
         <Tracker />
       </div>
       <div className="flex flex-col mx-10 mt-10 lg:flex-row lg:mx-10 xl:mx-0">
