@@ -39,7 +39,7 @@ const MainCard = () => {
             I am currently completing my major in Computer Science{" "}
             <RiComputerFill className="inline mb-1 ml-1" />. I have always been
             fascinated by computers especially the internet. I really love
-            building websites and bring ideas to life.
+            building websites and bringing ideas to life.
           </div>
         </div>
 

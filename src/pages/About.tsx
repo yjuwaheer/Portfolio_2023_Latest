@@ -17,7 +17,7 @@ const About = () => {
 
         <div className="flex flex-col items-center">
           <div className="text-5xl font-semibold sm:text-6xl mt-14 lg:text-8xl">Passionate</div>
-          <div className="mt-4 text-5xl text-center sm:text-6xl lg:text-8xl">to craft amazing</div>
+          <div className="mt-4 text-5xl text-center sm:text-6xl lg:text-8xl">at crafting</div>
           <div className="mt-4 text-5xl sm:text-6xl lg:text-8xl">websites</div>
         </div>
       </div>
