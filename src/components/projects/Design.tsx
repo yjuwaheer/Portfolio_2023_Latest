@@ -19,7 +19,7 @@ const Design = () => {
         <div>
           <div className="mb-1 text-2xl font-bold">Design App</div>
           <div className="hidden font-medium text-gray-500 sm:block">
-            Design resources (expo)
+            Design resources
             <SiExpo className="inline ml-1" />
           </div>
         </div>
@@ -65,14 +65,14 @@ const Design = () => {
         <img
           src="/images/design1_mob.png"
           alt="design1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "home" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
         <img
           src="/images/design2_mob.png"
           alt="design1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "fav" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />

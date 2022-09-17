@@ -20,7 +20,7 @@ const Recipe = () => {
         <div>
           <div className="mb-1 text-2xl font-bold">Recipe App</div>
           <div className="hidden font-medium text-gray-500 sm:block">
-            A recipe app built with react native (expo)
+            A recipe app built with react native
             <SiExpo className="inline ml-1" />
           </div>
         </div>
@@ -96,35 +96,35 @@ const Recipe = () => {
         <img
           src="/images/recipe1_mob.png"
           alt="recipe1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "home" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
         <img
           src="/images/recipe2_mob.png"
           alt="recipe1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "search" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
         <img
           src="/images/recipe3_mob.png"
           alt="recipe1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "add" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
         <img
           src="/images/recipe4_mob.png"
           alt="recipe1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "profile" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
         <img
           src="/images/recipe5_mob.png"
           alt="recipe1"
-          className={`w-3/4 ${
+          className={`w-3/4 sm:w-1/2 lg:w-3/4 ${
             tab === "settings" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
