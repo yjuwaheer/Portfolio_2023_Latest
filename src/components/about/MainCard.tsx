@@ -10,7 +10,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 const MainCard = () => {
   return (
     <div className="flex justify-center mt-16">
-      <div className="flex flex-col w-1/2 px-8 py-4 bg-gray-100 rounded-xl">
+      <div className="flex flex-col w-full px-8 py-4 mx-10 bg-gray-100 lg:w-1/2 rounded-xl lg:mx-0">
         <div className="text-xl font-semibold text-gray-700">
           My brief story till now...
         </div>
@@ -43,9 +43,9 @@ const MainCard = () => {
           </div>
         </div>
 
-        <div className="flex mb-4 italic text-gray-400">
+        <div className="mb-4 italic text-gray-400">
           ~ More chapters waiting to be written...{" "}
-          <div className="ml-1 text-gray-800 animate-pulse">|</div>
+          <div className="inline ml-1 text-gray-800 animate-pulse">|</div>
         </div>
 
         <div className="text-gray-800">
