@@ -9,9 +9,9 @@ import { MdFullscreenExit, MdFullscreen, MdClose } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className="flex items-center lg:justify-around xl:justify-between lg:mx-10 xl:mx-0">
+    <div className="flex items-center mx-10 lg:justify-around xl:justify-between lg:mx-10 xl:mx-0">
       {/* Me Window section */}
-      <div className="flex flex-col w-[400px] border-2 border-gray-600 rounded-xl">
+      <div className="flex flex-col sm:w-[600px] lg:w-[400px] border-2 border-gray-600 rounded-xl">
         <div className="flex items-center justify-between p-3 border-b-2 border-gray-600">
           <div className="font-semibold">Me</div>
           <div className="flex">

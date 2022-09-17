@@ -5,12 +5,12 @@ import { ImArrowUpRight2 } from "react-icons/im";
 
 const Featured = () => {
   return (
-    <div className="flex flex-col items-center lg:items-stretch lg:mx-10 xl:mx-0">
+    <div className="flex flex-col items-center mx-10 lg:items-stretch lg:mx-10 xl:mx-0">
       <div className="mt-16 mb-3 text-4xl font-bold text-gray-400">
         Featured
       </div>
       <div className="flex flex-col justify-between lg:flex-row">
-        <div className="relative px-5 py-10 bg-gray-100 mb-7 lg:mb-0 w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl">
+        <div className="relative px-5 py-10 bg-gray-100 mb-7 lg:mb-0 sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl">
           <div className="flex items-center justify-center w-16 p-1 text-3xl font-semibold text-white bg-blue-400 rounded-xl">
             <AiOutlineNumber /> 1
           </div>
@@ -31,7 +31,7 @@ const Featured = () => {
           </a>
         </div>
 
-        <div className="relative px-5 py-10 bg-gray-100 mb-7 lg:mb-0 w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl lg:mx-5">
+        <div className="relative px-5 py-10 bg-gray-100 mb-7 lg:mb-0 sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl lg:mx-5">
           <div className="flex items-center justify-center w-16 p-1 text-3xl font-semibold text-white bg-amber-400 rounded-xl">
             <AiOutlineNumber /> 2
           </div>
@@ -51,7 +51,7 @@ const Featured = () => {
           </a>
         </div>
 
-        <div className="relative px-5 py-10 bg-gray-100 w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl">
+        <div className="relative px-5 py-10 bg-gray-100 sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl">
           <div className="flex items-center justify-center w-16 p-1 text-3xl font-semibold text-white bg-orange-400 rounded-xl">
             <AiOutlineNumber /> 3
           </div>
