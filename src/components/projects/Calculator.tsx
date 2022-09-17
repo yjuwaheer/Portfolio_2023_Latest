@@ -35,9 +35,9 @@ const Calculator = () => {
       <div className="flex items-center justify-between">
         <div>
           <div className="mb-1 text-2xl font-semibold">Calculator App</div>
-          <div className="flex items-center font-medium text-gray-500">
+          <div className="hidden sm:block font-medium text-gray-500">
             A calculator app built with react
-            <SiReact className="ml-1" />
+            <SiReact className="inline ml-1" />
           </div>
         </div>
         <a

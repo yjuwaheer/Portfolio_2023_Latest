@@ -19,9 +19,9 @@ const Recipe = () => {
       <div className="flex items-center justify-between">
         <div>
           <div className="mb-1 text-2xl font-bold">Recipe App</div>
-          <div className="flex items-center font-medium text-gray-500">
+          <div className="hidden font-medium text-gray-500 sm:block">
             A recipe app built with react native (expo)
-            <SiExpo className="ml-1" />
+            <SiExpo className="inline ml-1" />
           </div>
         </div>
         <a

@@ -21,9 +21,9 @@ const Tracker = () => {
       <div className="flex items-center justify-between">
         <div>
           <div className="mb-1 text-2xl font-bold">Tracker App</div>
-          <div className="flex items-center font-medium text-gray-500">
+          <div className="hidden font-medium text-gray-500 sm:block">
             A tracker app (tasks + projects) built with electron
-            <IoLogoElectron className="ml-1" />
+            <IoLogoElectron className="inline ml-1" />
           </div>
         </div>
         <a
