@@ -90,32 +90,32 @@ const Tracker = () => {
           </div>
         </div>
         {/* Demo App Sections */}
-        <div className="border-2 md:border-0">
+        <div className="border-2 rounded-xl md:rounded-none md:border-0">
           <img
             src="/images/tracker1.png"
             alt="tracker1"
-            className={`md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl ${
               tab === "dashboard" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker2.png"
             alt="tracker2"
-            className={`md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl ${
               tab === "tasks" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker3.png"
             alt="tracker3"
-            className={`md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl ${
               tab === "projects" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker4.png"
             alt="tracker4"
-            className={`md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl ${
               tab === "settings" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
