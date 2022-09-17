@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between mt-10 mb-16 lg:mx-10 xl:mx-0">
+      <div className="flex items-center justify-between mx-10 mt-10 mb-16 lg:mx-10 xl:mx-0">
         <div className="flex flex-col items-center font-semibold text-gray-800">
           Yudish Juwaheer
         </div>

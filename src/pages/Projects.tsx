@@ -9,22 +9,22 @@ import Design from "../components/projects/Design";
 const Projects = () => {
   return (
     <div>
-      <div className="w-full px-8 py-4 overflow-hidden bg-gray-100 h-96 rounded-xl">
+      <div className="px-8 py-4 mx-10 overflow-hidden bg-gray-100 h-96 rounded-xl lg:mx-10 xl:mx-0">
         <Tracker />
       </div>
-      <div className="flex mt-10">
-        <div className="w-1/2 px-8 py-4 mr-10 overflow-hidden bg-gray-100 h-96 rounded-xl">
+      <div className="flex flex-col mx-10 mt-10 lg:flex-row lg:mx-10 xl:mx-0">
+        <div className="w-full px-8 py-4 mb-10 overflow-hidden bg-gray-100 lg:mr-10 lg:w-1/2 h-96 rounded-xl lg:mb-0">
           <Recipe />
         </div>
-        <div className="w-1/2 px-8 py-4 overflow-hidden bg-gray-100 h-96 rounded-xl">
+        <div className="w-full px-8 py-4 overflow-hidden bg-gray-100 lg:w-1/2 h-96 rounded-xl">
           <Calculator />
         </div>
       </div>
-      <div className="flex mt-10">
-        <div className="w-2/3 px-8 py-4 mr-10 overflow-hidden bg-gray-100 h-96 rounded-xl">
+      <div className="flex flex-col mx-10 mt-10 lg:flex-row lg:mx-10 xl:mx-0">
+        <div className="w-full px-8 py-4 mb-10 overflow-hidden bg-gray-100 lg:mr-10 lg:w-2/3 h-96 rounded-xl lg:mb-0">
           <Board />
         </div>
-        <div className="w-1/3 px-8 py-4 overflow-hidden bg-gray-100 h-96 rounded-xl">
+        <div className="w-full px-8 py-4 overflow-hidden bg-gray-100 lg:w-1/3 h-96 rounded-xl">
           <Design />
         </div>
       </div>
