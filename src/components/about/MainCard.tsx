@@ -26,7 +26,15 @@ const MainCard = () => {
             <GiIsland className="inline mb-1 ml-1" />. For those wondering it's
             in the Indian Ocean. If you ever get the chance, I highly recommend
             visiting. Completed high school back home. Afterwards moved to NL,
-            Canada to pursue a B.Sc. at MUN{" "}
+            Canada to pursue a B.Sc. at{" "}
+            <a
+              href="https://mun.ca/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline-offset-2 hover:underline"
+            >
+              MUN
+            </a>{" "}
             <FaUniversity className="inline mb-1 ml-1" />.
           </div>
         </div>
@@ -50,9 +58,26 @@ const MainCard = () => {
           <div className="font-medium text-gray-600">
             In terms of jobs, the first ever place I worked was in a paint brush{" "}
             factory back home <GiPaintBrush className="inline mb-1 ml-1" />.
-            Here in Canada, I have held a few jobs from Walmart to CBS as of
-            very recently. All my jobs have taught me something and I am
-            thankful for all the experiences.
+            Here in Canada, I have held a few jobs from working for{" "}
+            <a
+              href="https://www.walmart.ca/en"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline-offset-2 hover:underline"
+            >
+              Walmart
+            </a>{" "}
+            to{" "}
+            <a
+              href="https://www.blood.ca/en"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline-offset-2 hover:underline"
+            >
+              CBS
+            </a>
+            . All my jobs have taught me something and I am thankful for all the
+            experiences.
           </div>
         </div>
 
