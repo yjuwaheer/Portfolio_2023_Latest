@@ -66,7 +66,7 @@ const Board = () => {
 
       {/* Demo App */}
       <div className="flex justify-center">
-        <div className="w-3/4 border-8 border-gray-700 rounded-xl">
+        <div className="border-8 border-gray-700 sm:w-10/12 rounded-xl">
           <div className="border-4 border-gray-500 rounded-sm h-96">
             <ReactSketchCanvas
               ref={canvasRef}

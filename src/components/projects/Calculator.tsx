@@ -55,7 +55,7 @@ const Calculator = () => {
 
       {/* Demo App */}
       <div className="flex justify-center">
-        <div className={`w-3/4 sm:w-1/2 lg:w-3/4 ${bgColor} rounded-xl`}>
+        <div className={`w-10/12 sm:w-1/2 lg:w-3/4 ${bgColor} rounded-xl`}>
           <div className="h-28"></div>
           <div className="w-full bg-gray-100 border-b-2"></div>
           <div className="flex justify-around">
