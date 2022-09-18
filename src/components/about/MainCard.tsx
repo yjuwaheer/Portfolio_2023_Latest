@@ -83,7 +83,7 @@ const MainCard = () => {
 
         <div className="mb-4 italic text-gray-400">
           ~ More chapters waiting to be written...{" "}
-          <div className="inline ml-1 text-gray-800 animate-pulse">|</div>
+          <div className="inline ml-1 text-gray-800 animate-blink">|</div>
         </div>
 
         <div className="text-gray-800">
