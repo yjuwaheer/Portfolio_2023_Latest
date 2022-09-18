@@ -1,7 +1,7 @@
 import React from "react";
 // Icons
 import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { GiIsland } from "react-icons/gi";
+import { GiIsland, GiPaintBrush } from "react-icons/gi";
 import { FaUniversity } from "react-icons/fa";
 import { RiComputerFill } from "react-icons/ri";
 import { ImHeart } from "react-icons/im";
@@ -40,6 +40,19 @@ const MainCard = () => {
             <RiComputerFill className="inline mb-1 ml-1" />. I have always been
             fascinated by computers especially the internet. I really love
             building websites and bringing ideas to life.
+          </div>
+        </div>
+
+        <div className="flex items-start mb-4">
+          <div>
+            <IoIosArrowDroprightCircle className="mt-1 mr-2" />
+          </div>
+          <div className="font-medium text-gray-600">
+            In terms of jobs, the first ever place I worked was in a paint brush{" "}
+            factory back home <GiPaintBrush className="inline mb-1 ml-1" />.
+            Here in Canada, I have held a few jobs from Walmart to CBS as of
+            very recently. All my jobs have taught me something and I am
+            thankful for all the experiences.
           </div>
         </div>
 

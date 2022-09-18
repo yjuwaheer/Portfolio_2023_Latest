@@ -53,7 +53,7 @@ const Navbar = () => {
         <button
           className={`px-3 sm:px-4 py-2 mr-2 ${
             pathname === "/" ? "bg-gray-200 text-black" : "text-gray-600"
-          } rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-md font-semibold hover:text-black`}
+          } rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-base font-semibold hover:text-black`}
           onClick={() => {
             navigate("/");
             window.scrollTo(0, 0);
@@ -66,7 +66,7 @@ const Navbar = () => {
             pathname === "/projects"
               ? "bg-gray-200 text-black"
               : "text-gray-600"
-          } mr-2 rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-md font-semibold hover:text-black`}
+          } mr-2 rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-base font-semibold hover:text-black`}
           onClick={() => {
             navigate("/projects");
             window.scrollTo(0, 0);
@@ -78,7 +78,7 @@ const Navbar = () => {
         <button
           className={`px-3 sm:px-4 py-2 mr-2 ${
             pathname === "/about" ? "bg-gray-200 text-black" : "text-gray-600"
-          } rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-md font-semibold hover:text-black`}
+          } rounded-full cursor-pointer hover:bg-gray-200 text-sm sm:text-base font-semibold hover:text-black`}
           onClick={() => {
             navigate("/about");
             window.scrollTo(0, 0);
@@ -90,7 +90,7 @@ const Navbar = () => {
           href="/documents/ResumeYudishJuwaheer.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-3 py-2 text-sm font-semibold text-gray-600 rounded-full cursor-pointer sm:px-4 hover:bg-gray-200 sm:text-md hover:text-black"
+          className="px-3 py-2 text-sm font-semibold text-gray-600 rounded-full cursor-pointer sm:px-4 hover:bg-gray-200 sm:text-base hover:text-black"
         >
           Resume
         </a>
