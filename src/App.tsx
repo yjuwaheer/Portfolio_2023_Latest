@@ -9,6 +9,7 @@ import Footer from "./components/global/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -20,14 +21,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route
-              path="*"
-              element={
-                <div className="flex items-center justify-center text-4xl">
-                  404
-                </div>
-              }
-            />
+            <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
         </Router>
