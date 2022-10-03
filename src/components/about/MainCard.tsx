@@ -76,7 +76,7 @@ const MainCard = () => {
             >
               CBS
             </a>
-            . All my jobs have taught me something and I am thankful for all the
+            . All my jobs have taught me something useful and I am thankful for all the
             experiences.
           </div>
         </div>
