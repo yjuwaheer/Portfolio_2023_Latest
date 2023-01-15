@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col items-center">
         <div className="text-4xl font-semibold text-center">Hi, I'm Yudish</div>
         <div className="px-2 my-2 font-medium text-gray-700 bg-gray-100 border rounded-xl">
-          Currently a Final year student at{" "}
+          Recent Graduate from{" "}
           <a
             href="https://mun.ca/"
             target="_blank"

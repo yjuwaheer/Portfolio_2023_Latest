@@ -6,6 +6,7 @@ import { FaUniversity } from "react-icons/fa";
 import { RiComputerFill } from "react-icons/ri";
 import { ImHeart } from "react-icons/im";
 import { BsEmojiSmile } from "react-icons/bs";
+import { TbMathFunction } from "react-icons/tb";
 
 const MainCard = () => {
   return (
@@ -44,10 +45,11 @@ const MainCard = () => {
             <IoIosArrowDroprightCircle className="mt-1 mr-2" />
           </div>
           <div className="font-medium text-gray-600">
-            I am currently completing my major in Computer Science{" "}
-            <RiComputerFill className="inline mb-1 ml-1" />. I have always been
-            fascinated by computers especially the internet. I really love
-            building websites and bringing ideas to life.
+            I recently graduated with a major in Computer Science{" "}
+            <RiComputerFill className="inline mb-1 ml-1" /> and a minor in
+            Mathematics <TbMathFunction className="inline mb-1 ml-1" />. I have
+            always been fascinated by computers especially the internet. I
+            really love building websites and bringing ideas to life.
           </div>
         </div>
 
@@ -76,8 +78,8 @@ const MainCard = () => {
             >
               CBS
             </a>
-            . All my jobs have taught me something useful and I am thankful for all the
-            experiences.
+            . All my jobs have taught me something useful and I am thankful for
+            all the experiences.
           </div>
         </div>
 
