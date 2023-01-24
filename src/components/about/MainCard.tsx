@@ -76,7 +76,7 @@ const MainCard = () => {
               rel="noreferrer noopener"
               className="underline-offset-2 hover:underline"
             >
-              CBS
+              Canadian Blood Services
             </a>
             . All my jobs have taught me something useful and I am thankful for
             all the experiences.
