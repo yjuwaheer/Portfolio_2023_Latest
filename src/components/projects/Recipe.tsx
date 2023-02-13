@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 // Tooltip
 import ReactTooltip from "react-tooltip";
 // Icons
@@ -9,17 +9,32 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { IoMdHome, IoMdSearch, IoMdAddCircleOutline } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import { FiSettings } from "react-icons/fi";
+// Context
+import { GlobalContext } from "../../contexts/GlobalContext";
 
 const Recipe = () => {
   // States
   const [tab, setTab] = useState("home");
 
+  // Context
+  const { darkMode } = useContext(GlobalContext);
+
   return (
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-between">
         <div>
-          <div className="mb-1 text-2xl font-bold">Recipe App</div>
-          <div className="hidden font-medium text-gray-500 sm:block">
+          <div
+            className={`mb-1 text-2xl font-semibold ${
+              darkMode ? "text-gray-50" : ""
+            }`}
+          >
+            Recipe App
+          </div>
+          <div
+            className={`hidden font-medium  ${
+              darkMode ? "text-gray-100" : "text-gray-500"
+            } sm:block`}
+          >
             A recipe app built with react native
             <SiExpo className="inline ml-1" />
           </div>
@@ -30,7 +45,11 @@ const Recipe = () => {
           rel="noopener noreferrer"
           data-tip
           data-for="recipe"
-          className="p-2 text-xl text-gray-400 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
+          className={`p-2 text-xl border-2 rounded-full cursor-pointer bottom-2 right-2 ${
+            darkMode
+              ? "text-gray-300 bg-neutral-800 border-neutral-200 hover:border-white hover:text-gray-50"
+              : "text-gray-400 bg-gray-50 hover:border-gray-300 hover:text-black"
+          } `}
         >
           <ImArrowUpRight2 />
         </a>
@@ -131,7 +150,7 @@ const Recipe = () => {
       </div>
 
       {/* Tooltip Component */}
-      <ReactTooltip id="recipe">
+      <ReactTooltip id="recipe" type={darkMode ? "light" : "dark"}>
         <span className="flex items-center">
           View Repo <GoMarkGithub className="mx-2" />
         </span>

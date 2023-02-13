@@ -24,8 +24,18 @@ const Board = () => {
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-between">
         <div>
-          <div className={`mb-1 text-2xl font-semibold ${darkMode ? "text-gray-50" : ""}`}>Whiteboard App</div>
-          <div className="hidden font-medium text-gray-500 sm:block">
+          <div
+            className={`mb-1 text-2xl font-semibold ${
+              darkMode ? "text-gray-50" : ""
+            }`}
+          >
+            Whiteboard App
+          </div>
+          <div
+            className={`hidden font-medium  ${
+              darkMode ? "text-gray-100" : "text-gray-500"
+            } sm:block`}
+          >
             A collaboration board built with nodejs
             <FaNodeJs className="inline ml-1" />
           </div>
@@ -36,7 +46,11 @@ const Board = () => {
           rel="noopener noreferrer"
           data-tip
           data-for="board"
-          className="p-2 text-xl text-gray-400 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
+          className={`p-2 text-xl border-2 rounded-full cursor-pointer bottom-2 right-2 ${
+            darkMode
+              ? "text-gray-300 bg-neutral-800 border-neutral-200 hover:border-white hover:text-gray-50"
+              : "text-gray-400 bg-gray-50 hover:border-gray-300 hover:text-black"
+          } `}
         >
           <ImArrowUpRight2 />
         </a>
@@ -84,7 +98,7 @@ const Board = () => {
       </div>
 
       {/* Tooltip Component */}
-      <ReactTooltip id="board">
+      <ReactTooltip id="board" type={darkMode ? "light" : "dark"}>
         <span className="flex items-center">
           View App <FaChalkboard className="mx-2" />
         </span>
