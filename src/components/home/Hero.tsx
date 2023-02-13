@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
           <div
             className={`mt-4 text-lg font-medium ${
-              darkMode ? "text-gray-200" : "text-gray-800"
+              darkMode ? "text-gray-100" : "text-gray-800"
             }`}
           >
             I'm obssessed with web development{" "}
