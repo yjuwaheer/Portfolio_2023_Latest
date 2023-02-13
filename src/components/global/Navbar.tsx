@@ -21,7 +21,9 @@ const Navbar = () => {
     <>
       <div className="flex items-center justify-between mx-10 mt-10 mb-16 lg:mx-10 xl:mx-0">
         <div
-          className="flex flex-col items-center text-sm font-semibold text-gray-800 cursor-pointer sm:text-base"
+          className={`flex flex-col items-center text-sm font-semibold ${
+            darkMode ? "text-gray-50" : "text-gray-800"
+          } cursor-pointer sm:text-base`}
           onClick={() => {
             navigate("/");
             window.scrollTo(0, 0);
@@ -29,17 +31,29 @@ const Navbar = () => {
         >
           Yudish Juwaheer
         </div>
-        <div className="flex text-gray-400">
-          <div>
-            {darkMode ? (
-              <MdLightMode className="mx-2 text-xl cursor-pointer hover:text-gray-800" />
-            ) : (
-              <MdNightlight className="mx-2 text-xl cursor-pointer hover:text-gray-800" />
-            )}
-          </div>
+        <div className={`flex ${darkMode ? "text-gray-50" : "text-gray-400"}`}>
+          {darkMode ? (
+            <MdLightMode
+              className={`mx-2 text-xl cursor-pointer ${
+                darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
+              } hover:text-gray-800`}
+              onClick={() => {
+                handleDarkMode(false);
+              }}
+            />
+          ) : (
+            <MdNightlight
+              className="mx-2 text-xl cursor-pointer hover:text-gray-800"
+              onClick={() => {
+                handleDarkMode(true);
+              }}
+            />
+          )}
           <a
             href="mailto:yjuwaheer@mun.ca"
-            className="mx-2 text-xl cursor-pointer hover:text-gray-800"
+            className={`mx-2 text-xl cursor-pointer ${
+              darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
+            }`}
           >
             <HiOutlineMail />
           </a>
@@ -47,7 +61,9 @@ const Navbar = () => {
             href="https://github.com/yjuwaheer"
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-2 text-xl cursor-pointer hover:text-gray-800"
+            className={`mx-2 text-xl cursor-pointer ${
+              darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
+            }`}
           >
             <FaGithubAlt />
           </a>
@@ -55,7 +71,9 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/yudishjuwaheer/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-2 text-xl cursor-pointer hover:text-gray-800"
+            className={`mx-2 text-xl cursor-pointer ${
+              darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
+            }`}
           >
             <FaLinkedinIn />
           </a>
