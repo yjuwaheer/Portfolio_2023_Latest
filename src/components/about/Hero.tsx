@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 // Icons
 import { HiCursorClick } from "react-icons/hi";
+// Context
+import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
 const Hero = () => {
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
     <div className="flex justify-center">
       {/* Avatar and cursors */}

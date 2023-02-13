@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 // Icons
 import { AiOutlineNumber } from "react-icons/ai";
 import { ImArrowUpRight2 } from "react-icons/im";
+// Context
+import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
 const Featured = () => {
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
     <div className="flex flex-col items-center mx-10 lg:items-stretch lg:mx-10 xl:mx-0">
-      <div className="mt-16 mb-3 text-4xl font-bold text-gray-400">
+      <div
+        className={`mt-16 mb-3 text-4xl font-bold ${
+          darkMode ? "text-gray-100" : "text-gray-400"
+        }`}
+      >
         Featured
       </div>
       <div className="flex flex-col justify-between lg:flex-row">
