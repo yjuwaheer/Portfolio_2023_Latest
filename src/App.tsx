@@ -18,7 +18,11 @@ function App() {
   const { darkMode } = useContext<IGlobalContext>(GlobalContext);
 
   return (
-    <div className={`flex justify-center ${darkMode ? "bg-[#242424]" : ""}`}>
+    <div
+      className={`flex justify-center ${
+        darkMode ? "bg-[#242424]" : ""
+      } transition-all duration-400 ease-linear`}
+    >
       <div className="lg:w-[1200px] min-h-screen">
         <Router>
           <Navbar />

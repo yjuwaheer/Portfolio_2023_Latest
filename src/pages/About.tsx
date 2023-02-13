@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useContext } from "react";
 // Components
 import Hero from "../components/about/Hero";
 import MainCard from "../components/about/MainCard";
+// Context
+import { GlobalContext, IGlobalContext } from "../contexts/GlobalContext";
 
 const About = () => {
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
     <div>
       <Hero />
 
       {/* Hightlights */}
       <div className="flex flex-col items-center">
-        <div className="text-4xl font-semibold text-center">Hi, I'm Yudish</div>
-        <div className="px-2 my-2 font-medium text-gray-700 bg-gray-100 border rounded-xl">
+        <div
+          className={`text-4xl font-semibold text-center ${
+            darkMode ? "text-gray-50" : ""
+          }`}
+        >
+          Hi, I'm Yudish
+        </div>
+        <div
+          className={`px-2 my-2 font-medium ${
+            darkMode
+              ? "text-gray-50 bg-neutral-700"
+              : "text-gray-700 bg-gray-100"
+          } border rounded-xl
+          `}
+        >
           Recent Graduate from{" "}
           <a
             href="https://mun.ca/"
@@ -23,7 +41,7 @@ const About = () => {
           </a>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className={`flex flex-col items-center ${darkMode ? "text-gray-50" : ""}`}>
           <div className="text-5xl font-semibold sm:text-6xl mt-14 lg:text-8xl">
             Passionate
           </div>
