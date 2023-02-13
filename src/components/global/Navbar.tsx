@@ -81,7 +81,13 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed z-50 flex p-1 font-medium -translate-x-1/2 border-2 border-gray-200 rounded-full bottom-5 left-1/2 bg-gray-50">
+      <nav
+        className={`fixed z-50 flex p-1 font-medium -translate-x-1/2 border-2  rounded-full bottom-5 left-1/2 ${
+          darkMode
+            ? "bg-neutral-300 border-gray-50"
+            : "bg-gray-50 border-gray-200"
+        }`}
+      >
         <button
           className={`px-3 sm:px-4 py-2 mr-2 ${
             pathname === "/" ? "bg-gray-200 text-black" : "text-gray-600"
