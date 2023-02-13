@@ -64,7 +64,7 @@ const Navbar = () => {
             <MdLightMode
               className={`mx-2 text-xl cursor-pointer ${
                 darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
-              } hover:text-gray-800`}
+              }`}
               onClick={() => {
                 handleDarkMode(false);
               }}
