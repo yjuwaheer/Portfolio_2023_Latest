@@ -32,23 +32,6 @@ const Navbar = () => {
           Yudish Juwaheer
         </div>
         <div className={`flex ${darkMode ? "text-gray-50" : "text-gray-400"}`}>
-          {darkMode ? (
-            <MdLightMode
-              className={`mx-2 text-xl cursor-pointer ${
-                darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
-              } hover:text-gray-800`}
-              onClick={() => {
-                handleDarkMode(false);
-              }}
-            />
-          ) : (
-            <MdNightlight
-              className="mx-2 text-xl cursor-pointer hover:text-gray-800"
-              onClick={() => {
-                handleDarkMode(true);
-              }}
-            />
-          )}
           <a
             href="mailto:yjuwaheer@mun.ca"
             className={`mx-2 text-xl cursor-pointer ${
@@ -77,6 +60,23 @@ const Navbar = () => {
           >
             <FaLinkedinIn />
           </a>
+          {darkMode ? (
+            <MdLightMode
+              className={`mx-2 text-xl cursor-pointer ${
+                darkMode ? "hover:text-gray-300" : "hover:text-gray-800"
+              } hover:text-gray-800`}
+              onClick={() => {
+                handleDarkMode(false);
+              }}
+            />
+          ) : (
+            <MdNightlight
+              className="mx-2 text-xl cursor-pointer hover:text-gray-800"
+              onClick={() => {
+                handleDarkMode(true);
+              }}
+            />
+          )}
         </div>
       </div>
 
