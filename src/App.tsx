@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
 // Router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -10,10 +10,15 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Error from "./pages/Error";
+// Context
+import { GlobalContext, IGlobalContext } from "./contexts/GlobalContext";
 
 function App() {
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
-    <div className="flex justify-center">
+    <div className={"flex justify-center"}>
       <div className="lg:w-[1200px] min-h-screen">
         <Router>
           <Navbar />

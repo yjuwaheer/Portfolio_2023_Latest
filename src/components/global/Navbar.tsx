@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 // Router
 import { useNavigate, useLocation } from "react-router-dom";
 // Icons
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { MdLightMode, MdNightlight } from "react-icons/md";
+// Context
+import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
 const Navbar = () => {
   // Hooks
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
+  // Context
+  const { darkMode, handleDarkMode } =
+    useContext<IGlobalContext>(GlobalContext);
+
   return (
     <>
       <div className="flex items-center justify-between mx-10 mt-10 mb-16 lg:mx-10 xl:mx-0">
         <div
-          className="flex flex-col items-center font-semibold text-gray-800 cursor-pointer"
+          className="flex flex-col items-center text-sm font-semibold text-gray-800 cursor-pointer sm:text-base"
           onClick={() => {
             navigate("/");
             window.scrollTo(0, 0);
@@ -23,6 +30,13 @@ const Navbar = () => {
           Yudish Juwaheer
         </div>
         <div className="flex text-gray-400">
+          <div>
+            {darkMode ? (
+              <MdLightMode className="mx-2 text-xl cursor-pointer hover:text-gray-800" />
+            ) : (
+              <MdNightlight className="mx-2 text-xl cursor-pointer hover:text-gray-800" />
+            )}
+          </div>
           <a
             href="mailto:yjuwaheer@mun.ca"
             className="mx-2 text-xl cursor-pointer hover:text-gray-800"
