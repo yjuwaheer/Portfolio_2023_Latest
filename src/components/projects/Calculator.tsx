@@ -51,7 +51,7 @@ const Calculator = () => {
           <ImArrowUpRight2 />
         </a>
       </div>
-      <div className="my-3 border border-gray-200"></div>
+      <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Demo App */}
       <div className="flex justify-center">

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 // React sketch canvas
 import { ReactSketchCanvas, ReactSketchCanvasRef } from "react-sketch-canvas";
 // Tooltip
@@ -8,19 +8,23 @@ import { FaChalkboard } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { ImArrowUpRight2 } from "react-icons/im";
 // Icons Demo App
-// Icons Demo App
 import { GrPowerReset } from "react-icons/gr";
 import { IoMdSave } from "react-icons/io";
+// Context
+import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
 const Board = () => {
   // Hooks
   const canvasRef = useRef<ReactSketchCanvasRef>(null);
 
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-between">
         <div>
-          <div className="mb-1 text-2xl font-semibold">Whiteboard App</div>
+          <div className={`mb-1 text-2xl font-semibold ${darkMode ? "text-gray-50" : ""}`}>Whiteboard App</div>
           <div className="hidden font-medium text-gray-500 sm:block">
             A collaboration board built with nodejs
             <FaNodeJs className="inline ml-1" />
@@ -37,7 +41,7 @@ const Board = () => {
           <ImArrowUpRight2 />
         </a>
       </div>
-      <div className="my-3 border border-gray-200"></div>
+      <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Menu */}
       <div className="absolute z-10 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200">

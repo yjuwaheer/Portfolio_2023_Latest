@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 // Tooltip
 import ReactTooltip from "react-tooltip";
 // Icons
@@ -11,17 +11,32 @@ import { FaTasks } from "react-icons/fa";
 import { FiSettings } from "react-icons/fi";
 import { GoProject } from "react-icons/go";
 import { FcTodoList } from "react-icons/fc";
+// Context
+import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
 const Tracker = () => {
   // States
   const [tab, setTab] = useState("dashboard");
 
+  // Context
+  const { darkMode } = useContext<IGlobalContext>(GlobalContext);
+
   return (
     <div className="overflow-hidden">
       <div className="flex items-center justify-between">
         <div>
-          <div className="mb-1 text-2xl font-bold">Tracker App</div>
-          <div className="hidden font-medium text-gray-500 sm:block">
+          <div
+            className={`mb-1 text-2xl font-semibold ${
+              darkMode ? "text-gray-50" : ""
+            }`}
+          >
+            Tracker App
+          </div>
+          <div
+            className={`hidden font-medium  ${
+              darkMode ? "text-gray-100" : "text-gray-500"
+            } sm:block`}
+          >
             A tracker app (tasks + projects) built with electron
             <IoLogoElectron className="inline ml-1" />
           </div>
@@ -32,12 +47,16 @@ const Tracker = () => {
           rel="noopener noreferrer"
           data-tip
           data-for="tracker"
-          className="p-2 text-xl text-gray-400 border-2 rounded-full cursor-pointer bottom-2 right-2 bg-gray-50 hover:border-gray-300 hover:text-black"
+          className={`p-2 text-xl border-2 rounded-full cursor-pointer bottom-2 right-2 ${
+            darkMode
+              ? "text-gray-300 bg-neutral-800 border-neutral-200 hover:border-white hover:text-gray-50"
+              : "text-gray-400 bg-gray-50 hover:border-gray-300 hover:text-black"
+          } `}
         >
           <FiDownload />
         </a>
       </div>
-      <div className="my-3 border border-gray-200"></div>
+      <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Demo App */}
       <div className="flex">
@@ -94,28 +113,28 @@ const Tracker = () => {
           <img
             src="/images/tracker1.png"
             alt="tracker1"
-            className={`rounded-xl md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl md:rounded-l-none ${
               tab === "dashboard" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker2.png"
             alt="tracker2"
-            className={`rounded-xl md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl md:rounded-l-none ${
               tab === "tasks" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker3.png"
             alt="tracker3"
-            className={`rounded-xl md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl md:rounded-l-none ${
               tab === "projects" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
           <img
             src="/images/tracker4.png"
             alt="tracker4"
-            className={`rounded-xl md:rounded-r-xl ${
+            className={`rounded-xl md:rounded-r-xl md:rounded-l-none ${
               tab === "settings" ? "opacity-100" : "opacity-0 hidden"
             }`}
           />
@@ -123,7 +142,7 @@ const Tracker = () => {
       </div>
 
       {/* Tooltip Component */}
-      <ReactTooltip id="tracker">
+      <ReactTooltip id="tracker" type={darkMode ? "light" : "dark"}>
         <span className="flex items-center">
           Download <BsWindows className="mx-2" /> App
         </span>

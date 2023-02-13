@@ -34,7 +34,7 @@ const Design = () => {
           <ImArrowUpRight2 />
         </a>
       </div>
-      <div className="my-3 border border-gray-200"></div>
+      <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Menu */}
       <div className="absolute z-10 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200">
