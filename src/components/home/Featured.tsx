@@ -39,7 +39,7 @@ const Featured = () => {
             users to trade with in-built virtual currency.
           </div>
           <a
-            href="https://cs3100tradingapp-production.up.railway.app/"
+            href="https://wild-blue-dove-gown.cyclic.app/"
             target="_blank"
             rel="noopener noreferrer"
             className={`absolute p-2 text-xl border-2 rounded-full cursor-pointer bottom-2 right-2 ${
