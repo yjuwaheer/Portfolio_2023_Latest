@@ -41,7 +41,7 @@ const Board = () => {
           </div>
         </div>
         <a
-          href="https://hackfrostwhiteboard-production.up.railway.app/trial"
+          href="https://whiteboard-hackathon.onrender.com/trial"
           target="_blank"
           rel="noopener noreferrer"
           data-tip
