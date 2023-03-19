@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
+// Tooltip
+import ReactTooltip from "react-tooltip";
 // Icons
 import { AiOutlineNumber } from "react-icons/ai";
 import { ImArrowUpRight2 } from "react-icons/im";
+import { HiAcademicCap } from "react-icons/hi";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
 
@@ -28,11 +31,12 @@ const Featured = () => {
             <AiOutlineNumber /> 1
           </div>
           <div
-            className={`my-5 text-2xl font-semibold ${
+            className={`my-5 text-2xl font-semibold flex items-center ${
               darkMode ? "text-gray-50" : "text-gray-800"
             }`}
           >
             Trading App
+            <HiAcademicCap className="ml-2" data-tip data-for="academic" />
           </div>
           <div className={darkMode ? "text-gray-100" : "text-gray-500"}>
             A web app made for my web development university course. It allows
@@ -117,6 +121,11 @@ const Featured = () => {
           </a>
         </div>
       </div>
+
+      {/* Tooltip Component Academic */}
+      <ReactTooltip id="academic" type={darkMode ? "light" : "dark"}>
+        <span className="flex items-center">Academic Project</span>
+      </ReactTooltip>
     </div>
   );
 };

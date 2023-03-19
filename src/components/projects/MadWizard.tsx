@@ -5,6 +5,7 @@ import ReactTooltip from "react-tooltip";
 import { BsYoutube } from "react-icons/bs";
 import { SiSfml } from "react-icons/si";
 import { ImArrowUpRight2 } from "react-icons/im";
+import { HiAcademicCap } from "react-icons/hi";
 // Icons Demo Game
 import { AiOutlineGif } from "react-icons/ai";
 import { IoImage, IoImages } from "react-icons/io5";
@@ -23,11 +24,12 @@ const MadWizard = () => {
       <div className="flex items-center justify-between">
         <div>
           <div
-            className={`mb-1 text-2xl font-semibold ${
+            className={`mb-1 text-2xl font-semibold flex items-center ${
               darkMode ? "text-gray-50" : ""
             }`}
           >
             Mad Wizard
+            <HiAcademicCap className="ml-2" data-tip data-for="academic" />
           </div>
           <div
             className={`hidden font-medium  ${
@@ -119,6 +121,11 @@ const MadWizard = () => {
         <span className="flex items-center">
           Watch Trailer <BsYoutube className="mx-2" />
         </span>
+      </ReactTooltip>
+
+      {/* Tooltip Component Academic */}
+      <ReactTooltip id="academic" type={darkMode ? "light" : "dark"}>
+        <span className="flex items-center">Academic Project</span>
       </ReactTooltip>
     </div>
   );
