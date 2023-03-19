@@ -5,6 +5,7 @@ import Recipe from "../components/projects/Recipe";
 import Calculator from "../components/projects/Calculator";
 import Board from "../components/projects/Board";
 import Design from "../components/projects/Design";
+import MadWizard from "../components/projects/MadWizard";
 // Context
 import { GlobalContext, IGlobalContext } from "../contexts/GlobalContext";
 
@@ -51,6 +52,15 @@ const Projects = () => {
           } lg:w-1/3 h-96 rounded-xl`}
         >
           <Design />
+        </div>
+      </div>
+      <div className="flex flex-col mx-10 mt-10 lg:flex-row lg:mx-10 xl:mx-0">
+        <div
+          className={`h-full w-full px-8 py-4 overflow-hidden ${
+            darkMode ? "bg-neutral-700" : "bg-gray-100"
+          } lg:w-1/2 sm:h-96 rounded-xl`}
+        >
+          <MadWizard />
         </div>
       </div>
     </div>
