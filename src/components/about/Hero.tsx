@@ -17,7 +17,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.1 }}
-        className="relative w-max"
+        className="relative mb-2 w-max"
       >
         <img
           src={
@@ -26,8 +26,9 @@ const Hero = () => {
               : "/notion_avatar_transparent_cropped.png"
           }
           alt="avatar"
+          className="min-h-[30px]"
         />
-        <div className="absolute flex bottom-10 -right-8">
+        <div className="absolute flex bottom-6 -right-10">
           <HiCursorClick
             className={`mr-1 ${darkMode ? "text-gray-50" : "text-gray-700"}`}
           />
@@ -38,10 +39,10 @@ const Hero = () => {
                 : "text-gray-600 bg-gray-100"
             } rounded-xl`}
           >
-            Developer
+            Building apps
           </div>
         </div>
-        <div className="absolute flex bottom-16 -left-6">
+        <div className="absolute flex bottom-14 -left-8">
           <div
             className={`px-2 text-sm font-medium ${
               darkMode
@@ -49,7 +50,7 @@ const Hero = () => {
                 : "text-gray-600 bg-gray-100"
             } rounded-xl`}
           >
-            Student
+            Developer
           </div>
           <HiCursorClick
             className={`ml-1 ${
