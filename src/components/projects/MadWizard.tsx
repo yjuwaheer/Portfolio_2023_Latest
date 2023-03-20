@@ -11,6 +11,8 @@ import { AiOutlineGif } from "react-icons/ai";
 import { IoImage, IoImages } from "react-icons/io5";
 // Context
 import { GlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const MadWizard = () => {
   // States
@@ -60,7 +62,7 @@ const MadWizard = () => {
       {/* Menu */}
       <div className="absolute z-10 flex -translate-x-1/2 top-[21rem] left-1/2 bg-gray-100 rounded-xl border border-gray-200">
         <div
-          className={`px-2 py-1 rounded-full cursor-pointer ${
+          className={`px-2 py-1 mr-1 rounded-full cursor-pointer ${
             tab === "wgif" ? "bg-gray-300" : ""
           } hover:bg-gray-300`}
           onClick={() => {
@@ -80,7 +82,7 @@ const MadWizard = () => {
           <IoImage />
         </div>
         <div
-          className={`px-2 py-1 mr-1 rounded-full cursor-pointer ${
+          className={`px-2 py-1 rounded-full cursor-pointer ${
             tab === "w2" ? "bg-gray-300" : ""
           } hover:bg-gray-300`}
           onClick={() => {
@@ -92,11 +94,16 @@ const MadWizard = () => {
       </div>
 
       {/* Demo Game */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-center"
+      >
         <img
           src="/images/wizard.gif"
           alt="wizardgif"
-          className={`rounded-xl ${
+          className={`rounded-xl w-full ${
             tab === "wgif" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
@@ -114,7 +121,7 @@ const MadWizard = () => {
             tab === "w2" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="wizard" type={darkMode ? "light" : "dark"}>

@@ -12,6 +12,8 @@ import { GrPowerReset } from "react-icons/gr";
 import { IoMdSave } from "react-icons/io";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Board = () => {
   // Hooks
@@ -83,7 +85,12 @@ const Board = () => {
       </div>
 
       {/* Demo App */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-center"
+      >
         <div className="border-8 border-gray-700 sm:w-10/12 rounded-xl">
           <div className="border-4 border-gray-500 rounded-sm h-96">
             <ReactSketchCanvas
@@ -95,7 +102,7 @@ const Board = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="board" type={darkMode ? "light" : "dark"}>

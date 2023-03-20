@@ -8,6 +8,8 @@ import { TbArrowRightTail } from "react-icons/tb";
 import { MdFullscreenExit, MdFullscreen, MdClose } from "react-icons/md";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Hero = () => {
   // Context
@@ -16,7 +18,10 @@ const Hero = () => {
   return (
     <div className="flex items-center mx-10 lg:justify-around xl:justify-between lg:mx-10 xl:mx-0">
       {/* Me Window section */}
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
         className={`flex flex-col sm:w-[550px] lg:w-[400px] border-2 ${
           darkMode ? "border-gray-50" : "border-gray-600"
         } rounded-xl`}
@@ -87,7 +92,7 @@ const Hero = () => {
           <div className="text-xl font-semibold">Let's Talk</div>
           <TbArrowRightTail className="text-3xl" />
         </a>
-      </div>
+      </motion.div>
 
       {/* 3D Model */}
       <div className="lg:w-[350px] xl:w-[700px] hidden lg:block h-80">

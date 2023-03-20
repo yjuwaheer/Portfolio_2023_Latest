@@ -7,6 +7,8 @@ import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   // Hooks
@@ -81,7 +83,10 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <nav
+      <motion.nav
+        initial={{ opacity: 0, x: "-50%", y: 50 }}
+        animate={{ opacity: 1, x: "-50%", y: 0 }}
+        transition={{ duration: 0.5 }}
         className={`fixed z-50 flex p-1 font-medium -translate-x-1/2 border-2  rounded-full bottom-5 left-1/2 ${
           darkMode
             ? "bg-neutral-300 border-gray-50"
@@ -132,7 +137,7 @@ const Navbar = () => {
         >
           Resume
         </a>
-      </nav>
+      </motion.nav>
     </>
   );
 };

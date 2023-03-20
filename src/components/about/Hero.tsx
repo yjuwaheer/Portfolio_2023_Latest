@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import { HiCursorClick } from "react-icons/hi";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Hero = () => {
   // Context
@@ -11,7 +13,12 @@ const Hero = () => {
   return (
     <div className="flex justify-center">
       {/* Avatar and cursors */}
-      <div className="relative w-max">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="relative w-max"
+      >
         <img
           src={
             darkMode
@@ -50,7 +57,7 @@ const Hero = () => {
             } rotate-90`}
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

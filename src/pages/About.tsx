@@ -4,6 +4,8 @@ import Hero from "../components/about/Hero";
 import MainCard from "../components/about/MainCard";
 // Context
 import { GlobalContext, IGlobalContext } from "../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const About = () => {
   // Context
@@ -14,7 +16,12 @@ const About = () => {
       <Hero />
 
       {/* Hightlights */}
-      <div className="flex flex-col items-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1, delay: 0.1 }}
+        className="flex flex-col items-center"
+      >
         <div
           className={`text-4xl font-semibold text-center ${
             darkMode ? "text-gray-50" : ""
@@ -41,7 +48,11 @@ const About = () => {
           </a>
         </div>
 
-        <div className={`flex flex-col items-center ${darkMode ? "text-gray-50" : ""}`}>
+        <div
+          className={`flex flex-col items-center ${
+            darkMode ? "text-gray-50" : ""
+          }`}
+        >
           <div className="text-5xl font-semibold sm:text-6xl mt-14 lg:text-8xl">
             Passionate
           </div>
@@ -50,7 +61,7 @@ const About = () => {
           </div>
           <div className="mt-4 text-5xl sm:text-6xl lg:text-8xl">websites</div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Main card */}
       <MainCard />

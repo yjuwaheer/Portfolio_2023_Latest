@@ -9,6 +9,8 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { TbMathFunction } from "react-icons/tb";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const MainCard = () => {
   // Context
@@ -16,7 +18,10 @@ const MainCard = () => {
 
   return (
     <div className="flex justify-center mt-16">
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1, delay: 0.2 }}
         className={`flex flex-col w-full px-8 py-4 mx-10 ${
           darkMode ? "bg-neutral-700" : "bg-gray-100"
         } lg:w-1/2 rounded-xl lg:mx-0`}
@@ -134,7 +139,7 @@ const MainCard = () => {
           for his constant support. <ImHeart className="inline mx-1 mb-1" />{" "}
           <BsEmojiSmile className="inline mb-1" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

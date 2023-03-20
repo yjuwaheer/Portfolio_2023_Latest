@@ -11,6 +11,8 @@ import { CgProfile } from "react-icons/cg";
 import { FiSettings } from "react-icons/fi";
 // Context
 import { GlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Recipe = () => {
   // States
@@ -111,7 +113,12 @@ const Recipe = () => {
       </div>
 
       {/* Demo App */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-center"
+      >
         <img
           src="/images/recipe1_mob.png"
           alt="recipe1"
@@ -147,7 +154,7 @@ const Recipe = () => {
             tab === "settings" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="recipe" type={darkMode ? "light" : "dark"}>

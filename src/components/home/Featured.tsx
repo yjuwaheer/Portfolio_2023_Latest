@@ -7,6 +7,8 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { HiAcademicCap } from "react-icons/hi";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Featured = () => {
   // Context
@@ -22,7 +24,10 @@ const Featured = () => {
         Featured
       </div>
       <div className="flex flex-col justify-between lg:flex-row">
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.1, delay: 0.1 }}
           className={`relative px-5 py-10 ${
             darkMode ? "bg-neutral-700" : "bg-gray-100"
           } mb-7 lg:mb-0 sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl`}
@@ -54,9 +59,12 @@ const Featured = () => {
           >
             <ImArrowUpRight2 />
           </a>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.1, delay: 0.2 }}
           className={`relative px-5 py-10 ${
             darkMode ? "bg-neutral-700" : "bg-gray-100"
           } mb-7 lg:mb-0 sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl lg:mx-5`}
@@ -86,9 +94,12 @@ const Featured = () => {
           >
             <ImArrowUpRight2 />
           </a>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.1, delay: 0.3 }}
           className={`relative px-5 py-10 ${
             darkMode ? "bg-neutral-700" : "bg-gray-100"
           } sm:w-96 h-80 lg:w-1/3 xl:w-96 rounded-xl`}
@@ -119,7 +130,7 @@ const Featured = () => {
           >
             <ImArrowUpRight2 />
           </a>
-        </div>
+        </motion.div>
       </div>
 
       {/* Tooltip Component Academic */}

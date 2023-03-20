@@ -9,6 +9,8 @@ import { ImArrowUpRight2 } from "react-icons/im";
 import { MdChangeCircle } from "react-icons/md";
 // Context
 import { GlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Calculator = () => {
   // States
@@ -74,7 +76,12 @@ const Calculator = () => {
       <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Demo App */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-center"
+      >
         <div className={`w-10/12 sm:w-1/2 lg:w-3/4 ${bgColor} rounded-xl`}>
           <div className="h-28"></div>
           <div className="w-full bg-gray-100 border-b-2"></div>
@@ -122,7 +129,7 @@ const Calculator = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="calculator" type={darkMode ? "light" : "dark"}>

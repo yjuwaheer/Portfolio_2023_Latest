@@ -13,6 +13,8 @@ import { GoProject } from "react-icons/go";
 import { FcTodoList } from "react-icons/fc";
 // Context
 import { GlobalContext, IGlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Tracker = () => {
   // States
@@ -59,7 +61,12 @@ const Tracker = () => {
       <div className="my-3 w-full h-[2px] rounded-full bg-gray-200 "></div>
 
       {/* Demo App */}
-      <div className="flex">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex"
+      >
         {/* Menu */}
         <div className="flex-col justify-between hidden bg-white md:flex rounded-l-xl">
           <div>
@@ -139,7 +146,7 @@ const Tracker = () => {
             }`}
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="tracker" type={darkMode ? "light" : "dark"}>

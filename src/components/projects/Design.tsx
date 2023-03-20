@@ -10,6 +10,8 @@ import { IoMdHome } from "react-icons/io";
 import { MdFavorite } from "react-icons/md";
 // Context
 import { GlobalContext } from "../../contexts/GlobalContext";
+// Framer Motion
+import { motion } from "framer-motion";
 
 const Design = () => {
   // States
@@ -80,7 +82,12 @@ const Design = () => {
       </div>
 
       {/* Demo App */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+        className="flex justify-center"
+      >
         <img
           src="/images/design1_mob.png"
           alt="design1"
@@ -95,7 +102,7 @@ const Design = () => {
             tab === "fav" ? "opacity-100" : "opacity-0 hidden"
           }`}
         />
-      </div>
+      </motion.div>
 
       {/* Tooltip Component */}
       <ReactTooltip id="design" type={darkMode ? "light" : "dark"}>
