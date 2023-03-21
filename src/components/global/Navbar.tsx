@@ -130,7 +130,7 @@ const Navbar = () => {
           About
         </button>
         <a
-          href="/documents/ResumeYudishJuwaheer.pdf"
+          href="/documents/ResumeYudishJuwaheerFull.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 py-2 text-sm font-semibold text-gray-600 rounded-full cursor-pointer sm:px-4 hover:bg-gray-200 sm:text-base hover:text-black"
