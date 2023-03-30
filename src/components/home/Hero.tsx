@@ -76,7 +76,7 @@ const Hero = () => {
               darkMode ? "text-gray-100" : "text-gray-800"
             }`}
           >
-            I'm obssessed with web development{" "}
+            I'm pasionate about web development{" "}
             <GiSpiderWeb className="inline" />, and I'm always looking for
             opportunities to learn more.
           </div>
