@@ -22,8 +22,8 @@ const Hero = () => {
         <img
           src={
             darkMode
-              ? "/notion_avatar_transparent_cropped_light.png"
-              : "/notion_avatar_transparent_cropped.png"
+              ? "https://res.cloudinary.com/di9pgcyzx/image/upload/v1680614664/notion_avatar_transparent_cropped_light_mli8i6.png"
+              : "https://res.cloudinary.com/di9pgcyzx/image/upload/v1680614664/notion_avatar_transparent_cropped_cojryc.png"
           }
           alt="avatar"
           className="min-h-[30px]"
