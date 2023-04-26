@@ -34,7 +34,7 @@ const MainCard = () => {
           My brief story till now...
         </div>
 
-        <div className="my-3 border"></div>
+        <div className="my-3 border" />
 
         <div className="flex items-start mb-4">
           <div>
@@ -94,7 +94,7 @@ const MainCard = () => {
               darkMode ? "text-gray-100" : "text-gray-600"
             }`}
           >
-            In terms of jobs, the first ever place I worked was in a paint brush{" "}
+            In terms of jobs, the first place I ever worked was in a paint brush{" "}
             factory back home <GiPaintBrush className="inline mb-1 ml-1" />.
             Here in Canada, I have held a few jobs from working for{" "}
             <a
