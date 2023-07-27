@@ -105,7 +105,7 @@ const MainCard = () => {
             >
               Memorial University
             </a>
-            ,
+            ,{" "}
             <a
               href="https://www.walmart.ca/en"
               target="_blank"
@@ -114,7 +114,7 @@ const MainCard = () => {
             >
               Walmart
             </a>
-            , and
+            , and{" "}
             <a
               href="https://www.blood.ca/en"
               target="_blank"
