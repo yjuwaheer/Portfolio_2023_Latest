@@ -103,16 +103,18 @@ const MainCard = () => {
               rel="noreferrer noopener"
               className="underline-offset-2 hover:underline"
             >
-              Memorial University,
-            </a>{" "}
+              Memorial University
+            </a>
+            ,
             <a
               href="https://www.walmart.ca/en"
               target="_blank"
               rel="noreferrer noopener"
               className="underline-offset-2 hover:underline"
             >
-              Walmart, and
-            </a>{" "}
+              Walmart
+            </a>
+            , and
             <a
               href="https://www.blood.ca/en"
               target="_blank"
