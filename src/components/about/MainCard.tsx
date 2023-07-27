@@ -96,16 +96,23 @@ const MainCard = () => {
           >
             In terms of jobs, the first place I ever worked was in a paint brush{" "}
             factory back home <GiPaintBrush className="inline mb-1 ml-1" />.
-            Here in Canada, I have held a few jobs from working for{" "}
+            Here in Canada, I have worked for{" "}
+            <a
+              href="https://www.mun.ca/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline-offset-2 hover:underline"
+            >
+              Memorial University,
+            </a>{" "}
             <a
               href="https://www.walmart.ca/en"
               target="_blank"
               rel="noreferrer noopener"
               className="underline-offset-2 hover:underline"
             >
-              Walmart
+              Walmart, and
             </a>{" "}
-            to{" "}
             <a
               href="https://www.blood.ca/en"
               target="_blank"

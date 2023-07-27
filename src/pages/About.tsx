@@ -37,15 +37,7 @@ const About = () => {
           } border rounded-xl
           `}
         >
-          Recent Graduate from{" "}
-          <a
-            href="https://mun.ca/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="underline-offset-2 hover:underline"
-          >
-            MUN
-          </a>
+          Currently a Technical Consultant
         </div>
 
         <div
