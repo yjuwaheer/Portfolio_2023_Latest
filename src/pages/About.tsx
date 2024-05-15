@@ -37,7 +37,7 @@ const About = () => {
           } border rounded-xl
           `}
         >
-          Currently a Software Developer
+          Currently a Software Developer I
         </div>
 
         <div
