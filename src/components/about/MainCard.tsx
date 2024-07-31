@@ -75,7 +75,7 @@ const MainCard = () => {
               darkMode ? "text-gray-100" : "text-gray-600"
             }`}
           >
-            I recently graduated with a major in Computer Science{" "}
+            I graduated in 2023 with a major in Computer Science{" "}
             <RiComputerFill className="inline mb-1 ml-1" /> and a minor in
             Mathematics <TbMathFunction className="inline mb-1 ml-1" />. I have
             always been fascinated by computers especially the internet. I
@@ -113,6 +113,15 @@ const MainCard = () => {
               className="underline-offset-2 hover:underline"
             >
               Walmart
+            </a>
+            ,{" "}
+            <a
+              href="https://alignhcm.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline-offset-2 hover:underline"
+            >
+              Align HCM
             </a>
             , and{" "}
             <a
